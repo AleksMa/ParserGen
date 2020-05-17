@@ -36,7 +36,7 @@ void Parser::parse() {
                 cout << "Unexpected token: " << token->to_str() << endl;
                 return;
             }
-        } else if (D.find({static_cast<rule>(top->tag), token->get_tag()}) != D.end()) {
+        } else if (D.find({top->tag, token->get_tag()}) != D.end()) {
             rule r = static_cast<rule>(top->tag);
             vector<pair<bool, int>> right = D[{r, token->get_tag()}];
             if (right.size() == 0) {
@@ -59,16 +59,6 @@ void Parser::parse() {
             return;
         }
     } while (!S.empty());
-}
-
-void Parser::print_result() {
-    for (auto &i : result) {
-        cout << rule_names[i.first] << " => ";
-        for (auto e : i.second) {
-            cout << get_name(e) << ", ";
-        }
-        cout << endl;
-    }
 }
 
 string Parser::get_name(Node node) {

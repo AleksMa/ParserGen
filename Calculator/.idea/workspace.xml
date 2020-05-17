@@ -12,65 +12,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91c40bde-29ac-4f37-9b7a-9337efd3ddcb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Token/NumericToken.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Token/NumericToken.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Compiler/Compiler.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Compiler/Compiler.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Compiler/Parser.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Compiler/Parser.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Compiler/Scanner.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Compiler/Scanner.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Message/Message.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Message/Message.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/Node.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/Node.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/ResultNode.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/ResultNode.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/TokenNode.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node/TokenNode.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Position/Fragment.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Position/Position.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Position/Position.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compiler/Compiler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Compiler/Compiler.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compiler/Compiler.h" beforeDir="false" afterPath="$PROJECT_DIR$/Compiler/Compiler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compiler/Parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Compiler/Parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compiler/Parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/Compiler/Parser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compiler/Scanner.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Compiler/Scanner.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compiler/Scanner.h" beforeDir="false" afterPath="$PROJECT_DIR$/Compiler/Scanner.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RulesMap.h" beforeDir="false" afterPath="$PROJECT_DIR$/RulesMap.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Token/NonTermToken.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Token/NonTermToken.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Token/SpecToken.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Token/SpecToken.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Token/SpecToken.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Token/SpecToken.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Token/SpecToken.h" beforeDir="false" afterPath="$PROJECT_DIR$/Token/SpecToken.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Token/TermToken.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Token/TermToken.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Token/Token.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Token/Token.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/NameMap.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.c" beforeDir="false" afterPath="$PROJECT_DIR$/test.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/.idea/LexerLab3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/Compiler/Compiler.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/Compiler/Compiler.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/Compiler/Parser.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/Compiler/Parser.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/Compiler/Scanner.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/Compiler/Scanner.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/RulesMap.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/Token/NonTermToken.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/Token/NonTermToken.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/Token/SpecToken.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/Token/SpecToken.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/Token/TermToken.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/Token/TermToken.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/grammar.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CompGen/test.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GenComp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenComp/Compiler/Compiler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../GenComp/Compiler/Compiler.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenComp/Compiler/Compiler.h" beforeDir="false" afterPath="$PROJECT_DIR$/../GenComp/Compiler/Compiler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenComp/Compiler/Parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../GenComp/Compiler/Parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenComp/Compiler/Parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/../GenComp/Compiler/Parser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenComp/Compiler/Scanner.h" beforeDir="false" afterPath="$PROJECT_DIR$/../GenComp/Compiler/Scanner.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenComp/RulesMap.h" beforeDir="false" afterPath="$PROJECT_DIR$/../GenComp/RulesMap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenComp/Token/SpecToken.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../GenComp/Token/SpecToken.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenComp/Token/SpecToken.h" beforeDir="false" afterPath="$PROJECT_DIR$/../GenComp/Token/SpecToken.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenComp/grammar.c" beforeDir="false" afterPath="$PROJECT_DIR$/../GenComp/grammar.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenComp/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../GenComp/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GenComp/test.c" beforeDir="false" afterPath="$PROJECT_DIR$/../GenComp/test.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Utils/NameMap.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Utils/NameMap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Utils/Token/Token.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Utils/Token/Token.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Utils/Token/Token.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Utils/Token/Token.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,8 +71,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Token" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -104,11 +83,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Token" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="CALCULATOR72" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;$PROJECT_DIR$/../GenComp/test.c&quot;" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CALCULATOR72" TARGET_NAME="CALCULATOR72" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CALCULATOR72" RUN_TARGET_NAME="CALCULATOR72">
+    <configuration name="CALCULATOR72" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="&quot;$PROJECT_DIR$/test.c&quot;" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CALCULATOR72" TARGET_NAME="CALCULATOR72" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CALCULATOR72" RUN_TARGET_NAME="CALCULATOR72">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -125,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589714579946</updated>
       <workItem from="1589714581678" duration="1292000" />
-      <workItem from="1589718908106" duration="241000" />
+      <workItem from="1589718908106" duration="6823000" />
     </task>
     <servers />
   </component>
@@ -133,9 +113,37 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="424" y="262" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589719148440">
+    <state x="424" y="262" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589721213914">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="424" y="262" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200/1920.0.1280.1024@0.0.1920.1200" timestamp="1589719148440" />
+    <state x="424" y="262" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1200/1920.0.1280.1024@0.0.1920.1200" timestamp="1589721213914" />
+    <state x="698" y="354" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589720057894">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="698" y="354" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1200/1920.0.1280.1024@0.0.1920.1200" timestamp="1589720057894" />
+    <state width="1878" height="325" key="GridCell.Tab.0.bottom" timestamp="1589727729034">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1200/1920.0.1280.1024@0.0.1920.1200" timestamp="1589727729034" />
+    <state width="1878" height="325" key="GridCell.Tab.0.bottom/0.0.1920.1200/1920.23.1280.1001@0.0.1920.1200" timestamp="1589724672524" />
+    <state width="1878" height="325" key="GridCell.Tab.0.center" timestamp="1589727729032">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="325" key="GridCell.Tab.0.center/0.0.1920.1200/1920.0.1280.1024@0.0.1920.1200" timestamp="1589727729032" />
+    <state width="1878" height="325" key="GridCell.Tab.0.center/0.0.1920.1200/1920.23.1280.1001@0.0.1920.1200" timestamp="1589724672522" />
+    <state width="1878" height="325" key="GridCell.Tab.0.left" timestamp="1589727729028">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="325" key="GridCell.Tab.0.left/0.0.1920.1200/1920.0.1280.1024@0.0.1920.1200" timestamp="1589727729028" />
+    <state width="1878" height="325" key="GridCell.Tab.0.left/0.0.1920.1200/1920.23.1280.1001@0.0.1920.1200" timestamp="1589724672512" />
+    <state width="1878" height="325" key="GridCell.Tab.0.right" timestamp="1589727729033">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="325" key="GridCell.Tab.0.right/0.0.1920.1200/1920.0.1280.1024@0.0.1920.1200" timestamp="1589727729033" />
+    <state width="1878" height="325" key="GridCell.Tab.0.right/0.0.1920.1200/1920.23.1280.1001@0.0.1920.1200" timestamp="1589724672523" />
+    <state x="608" y="341" width="703" height="518" key="find.popup" timestamp="1589721109071">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="608" y="341" width="703" height="518" key="find.popup/0.0.1920.1200/1920.0.1280.1024@0.0.1920.1200" timestamp="1589721109071" />
   </component>
 </project>

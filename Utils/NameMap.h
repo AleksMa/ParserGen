@@ -9,6 +9,8 @@
 
 #include <map>
 
+static const int END_OF_PROGRAM = -1;
+
 enum rule {
     GRAMMAR,
     NT_DEC,
@@ -40,10 +42,9 @@ enum domain_tag {
     EPSILON,        // 7
     NT_KW,          // 8
     T_KW,           // 9
-    END_OF_PROGRAM, // 10
 };
 
-enum calc_tag {
+enum calc_domain_tag {
     SUM,            // 0
     MUL,            // 1
     LPAR,           // 2
@@ -51,13 +52,12 @@ enum calc_tag {
     N,              // 4
 };
 
-enum calc_nt {
+enum calc_rule {
     E,
     E1,
     T,
     T1,
     F,
-    //ROOT
 };
 
 static map<int, string> rule_names = {
@@ -106,7 +106,8 @@ static map<int, string> calc_token_names = {
         {MUL, "MUL"},
         {LPAR, "LPAR"},
         {RPAR, "RPAR"},
-        {N, "N"}
+        {N, "N"},
+        {END_OF_PROGRAM, "END_OF_PROGRAM"},
 };
 
 

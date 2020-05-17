@@ -13,6 +13,7 @@ file(GLOB SRC
         "../Utils/Token/*"
         "../Utils/Node/*"
         "../Utils/Position/*"
+
         )
 
 add_executable(CALCULATOR72 ${SRC})

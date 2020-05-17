@@ -16,8 +16,6 @@ private:
     Position cur;
     Compiler *compiler;
 
-
-
     long parse_val();
 
 public:

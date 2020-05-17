@@ -47,21 +47,29 @@ int main(int argc, char* argv[]) {
     string input_file = argv[1];
     string source = read_file(input_file);
 
-    Compiler compiler(true);
+    bool calculator_gram = false;
 
-    Scanner lex = compiler.get_scanner(source);
+    if (argc == 3 && argv[2] != "0")
+        calculator_gram = true;
+
+    Compiler generator(calculator_gram);
+
+    Scanner lex = generator.get_scanner(source);
 
     Parser parser = Parser(lex, D);
 
     parser.parse();
 
-    // parser.print_tree();
+    //parser.print_tree();
 
-    ResultNode *ast = compiler.makeAST(parser.get_root());
+    ResultNode *ast = generator.makeAST(parser.get_root());
 
-    compiler.print_tree(ast);
+    generator.print_tree(ast);
 
-    compiler.create_grammar(ast);
+    generator.create_grammar(ast);
+
+    if (generator.has_error())
+        cout << generator.get_error() << endl;
 
     return 0;
 }

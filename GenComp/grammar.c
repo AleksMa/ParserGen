@@ -1,6 +1,6 @@
 non-terminal    GRAMMAR, NT_DEC, NT_LIST, NT_TAIL, T_DEC, T_LIST, T_TAIL, R_LIST, RULE, RIGHT_SEC, RIGHT_SUB, RIGHT_TAIL, RULE_TAIL, A;
-terminal        'non_term', 'term', 'axiom', ';', '|', '::=', ',', 'epsilon', 'non-terminal', 'terminal', 'end_of_program';
-GRAMMAR     ::= NT_DEC T_DEC R_LIST A 'end_of_program';
+terminal        'non_term', 'term', 'axiom', ';', '|', '::=', ',', 'epsilon', 'non-terminal', 'terminal';
+GRAMMAR     ::= NT_DEC T_DEC R_LIST A;
 NT_DEC      ::= 'non-terminal' NT_LIST ';' ;
 NT_LIST     ::= 'non_term' NT_TAIL;
 NT_TAIL     ::= ',' 'non_term' NT_TAIL | epsilon;

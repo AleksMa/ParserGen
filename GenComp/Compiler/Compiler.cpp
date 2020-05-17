@@ -103,7 +103,13 @@ void Compiler::analize_rule(ResultNode *node) {
 
     TokenNode *tn = dynamic_cast<TokenNode *>(NT);
     string nontermstr = tn->value;
+    if (str_to_nt.find(nontermstr) == str_to_nt.end()) {
+        error = true;
+        error_msg = "Необъявленный нетерминал в левой части";
+        return;
+    }
     int nt_i = str_to_nt[nontermstr];
+    declared[nt_i] = true;
 
     for (int i = 1; i < node->children.size(); ++i) {
         vector<pair<bool, int>> rule;
@@ -115,9 +121,19 @@ void Compiler::analize_rule(ResultNode *node) {
             string tokenstr = first_tn->value;
 
             if (cur_node->tag == TERM) {
+                if (str_to_t.find(tokenstr) == str_to_t.end()) {
+                    error = true;
+                    error_msg = "Необъявленный терминал в правой части";
+                    return;
+                }
                 int t_i = str_to_t[tokenstr];
                 rule.push_back({1, t_i});
             } else if (cur_node->tag == NON_TERM) {
+                if (str_to_nt.find(tokenstr) == str_to_nt.end()) {
+                    error = true;
+                    error_msg = "Необъявленный нетерминал в правой части";
+                    return;
+                }
                 int nnt_i = str_to_nt[tokenstr];
                 rule.push_back({0, nnt_i});
             }
@@ -134,6 +150,11 @@ void Compiler::analize_nonterms(ResultNode *node) {
 
         TokenNode *nt_node = dynamic_cast<TokenNode *>(child_node);
         string nontermstr = nt_node->value;
+        if (str_to_nt.find(nontermstr) != str_to_nt.end()) {
+            error = true;
+            error_msg = "Дублирование нетерминала";
+            return;
+        }
         str_to_nt[nontermstr] = str_to_nt.size();
         nt_to_str[str_to_nt.size() - 1] = nontermstr;
 
@@ -152,10 +173,13 @@ void Compiler::analize_terms(ResultNode *node) {
 
         TokenNode *t_node = dynamic_cast<TokenNode *>(child_node);
         string termstr = t_node->value;
+        if (str_to_t.find(termstr) != str_to_t.end()) {
+            error = true;
+            error_msg = "Дублирование терминала";
+            return;
+        }
         str_to_t[termstr] = str_to_t.size();
         t_to_str[str_to_nt.size() - 1] = termstr;
-
-        int t_i = str_to_t[termstr];
     }
 }
 
@@ -182,11 +206,26 @@ void Compiler::create_grammar(ResultNode *root) {
     search_for_tag(root, T_DEC, &node);
     analize_terms(node);
 
+    search_for_tag(root, A, &node);
+    analize_axiom(node);
+
     search_for_tag(root, R_LIST, &node);
     //print_node(node, 0);
     for (auto &i : node->children) {
         analize_rule(i);
     }
+
+    for (auto declit = declared.begin(); declit != declared.end(); declit++) {
+        if (!(*declit).second) {
+            error = true;
+            error_msg = "Нетерминал не определен";
+        }
+    }
+
+    if (error)
+        return;
+
+    follow[axiom].insert(END_OF_PROGRAM);
 
     bool fixed_first = true;
     bool fixed_follow = true;
@@ -290,10 +329,11 @@ void Compiler::create_grammar(ResultNode *root) {
         }
     }
 
-    auto rnames = calc_rule_names;
-    auto tnames = calc_token_names;
+    auto rnames = (calculator ? calc_rule_names : rule_names);
+    auto tnames = (calculator ? calc_token_names : token_names);
 
-    cout << "map<pair<rule, domain_tag>, vector<pair<bool, int>>> D =" << endl;
+    cout << "map<pair<int, int>, vector<pair<bool, int>>> D =" << endl;
+
     cout << "{";
     for (auto mit = new_D.begin(); mit != new_D.end(); mit++) {
         auto pbi = (*mit).first;
@@ -312,7 +352,6 @@ void Compiler::create_grammar(ResultNode *root) {
     cout << "};" << endl;
 
 
-
 }
 
 
@@ -327,5 +366,19 @@ void Compiler::delete_node(ResultNode *node) {
     delete node;
 }
 
-Compiler::Compiler(bool calc): calculator(calc) {}
+Compiler::Compiler(bool calc) : calculator(calc) {}
+
+void Compiler::analize_axiom(ResultNode *node) {
+    auto ax_node = node->children[0];
+    TokenNode *t_node = dynamic_cast<TokenNode *>(ax_node);
+    string nontermstr = t_node->value;
+
+    if (str_to_nt.find(nontermstr) == str_to_nt.end()) {
+        error = true;
+        error_msg = "Аксиома не является нетерминалом";
+        return;
+    }
+
+    axiom = str_to_nt[nontermstr];
+}
 

@@ -1,18 +1,6 @@
 /*
-non-terminal E , E1 , T , T1 , F ;
-terminal '+ ' , '* ' , '( ' , ') ' , n ;
-E ::= T E1 ;
-E1 ::= '+' T E1 | epsilon ;
-T ::= F T1 ;
-T1 ::= '* ' F T1 | epsilon ;
-F ::= n | '( ' E ') ';
-axiom E ;
- */
-
-
-/*
 tokens: + * ( ) [0-9]*
- */
+*/
 
 
 #include <iostream>
@@ -41,7 +29,7 @@ int main(int argc, char* argv[]) {
     string input_file = argv[1];
     string source = read_file(input_file);
 
-    Compiler compiler(true);
+    Compiler compiler;
 
     Scanner lex = compiler.get_scanner(source);
 
@@ -55,7 +43,9 @@ int main(int argc, char* argv[]) {
 
     compiler.print_tree(ast);
 
-    compiler.create_grammar(ast);
+    int res = compiler.calculate(ast);
+
+    cout << endl << "Result: " << res << endl;
 
     return 0;
 }

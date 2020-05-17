@@ -1,6 +1,6 @@
 #include "SpecToken.h"
 
-SpecToken::SpecToken(domain_tag tag, Position start, Position end): Token(tag, start, end) {}
+SpecToken::SpecToken(int tag, Position start, Position end): Token(tag, start, end) {}
 
 string SpecToken::to_str() {
     string type = "END OF PROGRAM";

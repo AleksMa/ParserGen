@@ -10,7 +10,7 @@
 
 using namespace std;
 
-typedef map<pair<rule, domain_tag>, vector<pair<bool, int>>> MPVP;
+typedef map<pair<int, int>, vector<pair<bool, int>>> MPVP;
 
 class Compiler {
 private:
@@ -31,6 +31,7 @@ private:
     map<string, int> str_to_t;
 
     map<int, bool> can_eps;
+    map<int, bool> declared;
 
     map<int, set<int>> first;
     map<int, set<int>> follow;
@@ -38,6 +39,17 @@ private:
     map<int, vector<vector<pair<bool, int>>>> rules;
 
     bool calculator = false;
+
+    int axiom;
+
+    void nodeAST(ResultNode *root, ResultNode *old_node);
+    void delete_node(ResultNode *node);
+    void analize_nonterms(ResultNode *node);
+    void analize_terms(ResultNode *node);
+    void analize_axiom(ResultNode *node);
+
+    bool error = false;
+    string error_msg;
 
 public:
     Compiler();
@@ -55,19 +67,12 @@ public:
 
     ResultNode *makeAST(ResultNode *root);
 
-    void nodeAST(ResultNode *root, ResultNode *old_node);
-
     void print_tree(ResultNode *root);
-
     void print_node(ResultNode *node, int level);
-
     void create_grammar(ResultNode *root);
 
-    void delete_node(ResultNode *node);
-
-    void analize_nonterms(ResultNode *node);
-
-    void analize_terms(ResultNode *node);
+    bool has_error() { return error; };
+    string get_error() { return error_msg; };
 };
 
 #endif //LAB71_COMPILER_H

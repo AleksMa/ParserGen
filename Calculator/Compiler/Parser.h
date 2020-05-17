@@ -13,7 +13,7 @@
 
 using namespace std;
 
-typedef map<pair<rule, domain_tag>, vector<pair<bool, int>>> MPVP;
+typedef map<pair<int, int>, vector<pair<bool, int>>> MPVP;
 
 class Compiler;
 
@@ -21,7 +21,7 @@ class Parser {
 private:
     Compiler *compiler;
 
-    map<pair<rule, domain_tag>, vector<pair<bool, int>>> D;
+    MPVP D;
 
     stack<ResultNode*> S;
     vector<pair<rule, vector<Node>>> result;

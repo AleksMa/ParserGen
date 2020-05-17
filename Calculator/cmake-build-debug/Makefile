@@ -204,32 +204,32 @@ Compiler/Scanner.cpp.s:
 	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Compiler/Scanner.cpp.s
 .PHONY : Compiler/Scanner.cpp.s
 
-Token/NonTermToken.o: Token/NonTermToken.cpp.o
+Token/NumericToken.o: Token/NumericToken.cpp.o
 
-.PHONY : Token/NonTermToken.o
+.PHONY : Token/NumericToken.o
 
 # target to build an object file
-Token/NonTermToken.cpp.o:
-	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/NonTermToken.cpp.o
-.PHONY : Token/NonTermToken.cpp.o
+Token/NumericToken.cpp.o:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/NumericToken.cpp.o
+.PHONY : Token/NumericToken.cpp.o
 
-Token/NonTermToken.i: Token/NonTermToken.cpp.i
+Token/NumericToken.i: Token/NumericToken.cpp.i
 
-.PHONY : Token/NonTermToken.i
+.PHONY : Token/NumericToken.i
 
 # target to preprocess a source file
-Token/NonTermToken.cpp.i:
-	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/NonTermToken.cpp.i
-.PHONY : Token/NonTermToken.cpp.i
+Token/NumericToken.cpp.i:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/NumericToken.cpp.i
+.PHONY : Token/NumericToken.cpp.i
 
-Token/NonTermToken.s: Token/NonTermToken.cpp.s
+Token/NumericToken.s: Token/NumericToken.cpp.s
 
-.PHONY : Token/NonTermToken.s
+.PHONY : Token/NumericToken.s
 
 # target to generate assembly for a file
-Token/NonTermToken.cpp.s:
-	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/NonTermToken.cpp.s
-.PHONY : Token/NonTermToken.cpp.s
+Token/NumericToken.cpp.s:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/NumericToken.cpp.s
+.PHONY : Token/NumericToken.cpp.s
 
 Token/SpecToken.o: Token/SpecToken.cpp.o
 
@@ -257,33 +257,6 @@ Token/SpecToken.s: Token/SpecToken.cpp.s
 Token/SpecToken.cpp.s:
 	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/SpecToken.cpp.s
 .PHONY : Token/SpecToken.cpp.s
-
-Token/TermToken.o: Token/TermToken.cpp.o
-
-.PHONY : Token/TermToken.o
-
-# target to build an object file
-Token/TermToken.cpp.o:
-	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/TermToken.cpp.o
-.PHONY : Token/TermToken.cpp.o
-
-Token/TermToken.i: Token/TermToken.cpp.i
-
-.PHONY : Token/TermToken.i
-
-# target to preprocess a source file
-Token/TermToken.cpp.i:
-	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/TermToken.cpp.i
-.PHONY : Token/TermToken.cpp.i
-
-Token/TermToken.s: Token/TermToken.cpp.s
-
-.PHONY : Token/TermToken.s
-
-# target to generate assembly for a file
-Token/TermToken.cpp.s:
-	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/TermToken.cpp.s
-.PHONY : Token/TermToken.cpp.s
 
 Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.o: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.cpp.o
 
@@ -492,15 +465,12 @@ help:
 	@echo "... Compiler/Scanner.o"
 	@echo "... Compiler/Scanner.i"
 	@echo "... Compiler/Scanner.s"
-	@echo "... Token/NonTermToken.o"
-	@echo "... Token/NonTermToken.i"
-	@echo "... Token/NonTermToken.s"
+	@echo "... Token/NumericToken.o"
+	@echo "... Token/NumericToken.i"
+	@echo "... Token/NumericToken.s"
 	@echo "... Token/SpecToken.o"
 	@echo "... Token/SpecToken.i"
 	@echo "... Token/SpecToken.s"
-	@echo "... Token/TermToken.o"
-	@echo "... Token/TermToken.i"
-	@echo "... Token/TermToken.s"
 	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.o"
 	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.i"
 	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.s"

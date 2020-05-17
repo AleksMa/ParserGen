@@ -16,17 +16,11 @@ private:
     Position cur;
     Compiler *compiler;
 
-
-
-    long parse_val();
+    int parse_val();
 
 public:
     Scanner(string source, Compiler *compiler);
     Token *next_token();
-
-    bool parse_axiom();
-
-    bool parse_kw(string keyword);
 };
 
 #endif //LAB71_SCANNER_H

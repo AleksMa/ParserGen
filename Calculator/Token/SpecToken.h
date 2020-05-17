@@ -7,7 +7,7 @@ class SpecToken: public Token {
 public:
     string to_str() override;
 
-    SpecToken(domain_tag tag, Position start, Position end);
+    SpecToken(int tag, Position start, Position end);
 };
 
 

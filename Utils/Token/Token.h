@@ -10,13 +10,13 @@ using namespace std;
 class Token {
 public:
     virtual string to_str();
-    domain_tag get_tag();
+    int get_tag();
 
 protected:
-    domain_tag tag;
+    int tag;
     Fragment coords;
 
-    Token(domain_tag type, Position start, Position end);
+    Token(int type, Position start, Position end);
 
     //domain_tag get_type();
 };

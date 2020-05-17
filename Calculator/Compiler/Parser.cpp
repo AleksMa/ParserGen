@@ -1,8 +1,7 @@
 #include <iostream>
 #include "Parser.h"
 #include "../../Utils/Node/TokenNode.h"
-#include "../Token/TermToken.h"
-#include "../Token/NonTermToken.h"
+#include "../Token/NumericToken.h"
 
 Parser::Parser(Scanner L, MPVP D) : L(L), D(D) {
 }
@@ -10,7 +9,7 @@ Parser::Parser(Scanner L, MPVP D) : L(L), D(D) {
 void Parser::parse() {
     root = new ResultNode(Node(false, 0), "");
 
-    S.push(new ResultNode(GRAMMAR_NODE, rule_names[GRAMMAR], root));
+    S.push(new ResultNode(GRAMMAR_NODE, calc_rule_names[GRAMMAR], root));
 
     Token *token = L.next_token();
     do {
@@ -21,14 +20,10 @@ void Parser::parse() {
                 TokenNode *tn = dynamic_cast<TokenNode*>(top);
                 tn->parent->children.push_back(top);
                 tn->name = token->to_str();
-                if (token->get_tag() == TERM) {
-                    TermToken *tt = dynamic_cast<TermToken*>(token);
-                    string term_str = tt->ident.substr(1, tt->ident.size() - 2);
-                    tn->value = term_str;;
-                }
-                if (token->get_tag() == NON_TERM) {
-                    NonTermToken *tt = dynamic_cast<NonTermToken*>(token);
-                    tn->value = tt->ident;
+                if (token->get_tag() == N) {
+                    NumericToken *tt = dynamic_cast<NumericToken*>(token);
+                    string long_str = to_string(tt->val);
+                    tn->value = long_str;
                 }
                 S.pop();
                 token = L.next_token();
@@ -36,7 +31,7 @@ void Parser::parse() {
                 cout << "Unexpected token: " << token->to_str() << endl;
                 return;
             }
-        } else if (D.find({static_cast<rule>(top->tag), token->get_tag()}) != D.end()) {
+        } else if (D.find({top->tag, token->get_tag()}) != D.end()) {
             rule r = static_cast<rule>(top->tag);
             vector<pair<bool, int>> right = D[{r, token->get_tag()}];
             if (right.size() == 0) {
@@ -51,7 +46,7 @@ void Parser::parse() {
                         S.push(new TokenNode(trn, ""));
                     }
                     else
-                        S.push(new ResultNode(child, rule_names[static_cast<rule>(child.tag)], top));
+                        S.push(new ResultNode(child, calc_rule_names[static_cast<rule>(child.tag)], top));
                 }
             }
         } else {
@@ -63,7 +58,7 @@ void Parser::parse() {
 
 void Parser::print_result() {
     for (auto &i : result) {
-        cout << rule_names[i.first] << " => ";
+        cout << calc_rule_names[i.first] << " => ";
         for (auto e : i.second) {
             cout << get_name(e) << ", ";
         }
@@ -72,7 +67,7 @@ void Parser::print_result() {
 }
 
 string Parser::get_name(Node node) {
-    return node.is_terminal ? to_string(node.tag) : rule_names[static_cast<rule>(node.tag)];
+    return node.is_terminal ? to_string(node.tag) : calc_rule_names[static_cast<rule>(node.tag)];
 }
 
 
