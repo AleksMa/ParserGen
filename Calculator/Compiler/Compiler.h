@@ -5,8 +5,8 @@
 #include "Parser.h"
 #include <vector>
 #include <map>
-#include "../Token/Token.h"
-#include "../Message/Message.h"
+#include "../../Utils/Token/Token.h"
+#include "../../Utils/Message/Message.h"
 
 using namespace std;
 

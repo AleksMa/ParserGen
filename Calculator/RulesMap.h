@@ -1,8 +1,7 @@
-
 #ifndef LAB71_RULESMAP_H
 #define LAB71_RULESMAP_H
 
-#include "Utils/NameMap.h"
+#include "../Utils/NameMap.h"
 #include <vector>
 #include <map>
 

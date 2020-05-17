@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Parser.h"
-#include "../Node/TokenNode.h"
+#include "../../Utils/Node/TokenNode.h"
 #include "../Token/TermToken.h"
 #include "../Token/NonTermToken.h"
 

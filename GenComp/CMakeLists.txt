@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(LEXERLAB4)
+project(GENCOMP72)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -15,4 +15,4 @@ file(GLOB SRC
         "../Utils/Position/*"
         )
 
-add_executable(LEXERLAB4 ${SRC})
+add_executable(GENCOMP72 ${SRC})

@@ -11,13 +11,7 @@ axiom E ;
 
 
 /*
-NT ~ identifier   [A-Z]+[0-9]*
-non-terminal
-terminal
-axiom
-;
-|
-::=
+tokens: + * ( ) [0-9]*
  */
 
 

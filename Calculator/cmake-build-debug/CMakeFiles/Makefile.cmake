@@ -52,5 +52,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Calculator.dir/DependInfo.cmake"
+  "CMakeFiles/CALCULATOR72.dir/DependInfo.cmake"
   )

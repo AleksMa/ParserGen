@@ -111,17 +111,179 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Calculator
+# Target rules for targets named CALCULATOR72
 
 # Build rule for target.
-Calculator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Calculator
-.PHONY : Calculator
+CALCULATOR72: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 CALCULATOR72
+.PHONY : CALCULATOR72
 
 # fast build rule for target.
-Calculator/fast:
-	$(MAKE) -f CMakeFiles/Calculator.dir/build.make CMakeFiles/Calculator.dir/build
-.PHONY : Calculator/fast
+CALCULATOR72/fast:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/build
+.PHONY : CALCULATOR72/fast
+
+Compiler/Compiler.o: Compiler/Compiler.cpp.o
+
+.PHONY : Compiler/Compiler.o
+
+# target to build an object file
+Compiler/Compiler.cpp.o:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Compiler/Compiler.cpp.o
+.PHONY : Compiler/Compiler.cpp.o
+
+Compiler/Compiler.i: Compiler/Compiler.cpp.i
+
+.PHONY : Compiler/Compiler.i
+
+# target to preprocess a source file
+Compiler/Compiler.cpp.i:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Compiler/Compiler.cpp.i
+.PHONY : Compiler/Compiler.cpp.i
+
+Compiler/Compiler.s: Compiler/Compiler.cpp.s
+
+.PHONY : Compiler/Compiler.s
+
+# target to generate assembly for a file
+Compiler/Compiler.cpp.s:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Compiler/Compiler.cpp.s
+.PHONY : Compiler/Compiler.cpp.s
+
+Compiler/Parser.o: Compiler/Parser.cpp.o
+
+.PHONY : Compiler/Parser.o
+
+# target to build an object file
+Compiler/Parser.cpp.o:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Compiler/Parser.cpp.o
+.PHONY : Compiler/Parser.cpp.o
+
+Compiler/Parser.i: Compiler/Parser.cpp.i
+
+.PHONY : Compiler/Parser.i
+
+# target to preprocess a source file
+Compiler/Parser.cpp.i:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Compiler/Parser.cpp.i
+.PHONY : Compiler/Parser.cpp.i
+
+Compiler/Parser.s: Compiler/Parser.cpp.s
+
+.PHONY : Compiler/Parser.s
+
+# target to generate assembly for a file
+Compiler/Parser.cpp.s:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Compiler/Parser.cpp.s
+.PHONY : Compiler/Parser.cpp.s
+
+Compiler/Scanner.o: Compiler/Scanner.cpp.o
+
+.PHONY : Compiler/Scanner.o
+
+# target to build an object file
+Compiler/Scanner.cpp.o:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Compiler/Scanner.cpp.o
+.PHONY : Compiler/Scanner.cpp.o
+
+Compiler/Scanner.i: Compiler/Scanner.cpp.i
+
+.PHONY : Compiler/Scanner.i
+
+# target to preprocess a source file
+Compiler/Scanner.cpp.i:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Compiler/Scanner.cpp.i
+.PHONY : Compiler/Scanner.cpp.i
+
+Compiler/Scanner.s: Compiler/Scanner.cpp.s
+
+.PHONY : Compiler/Scanner.s
+
+# target to generate assembly for a file
+Compiler/Scanner.cpp.s:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Compiler/Scanner.cpp.s
+.PHONY : Compiler/Scanner.cpp.s
+
+Token/NonTermToken.o: Token/NonTermToken.cpp.o
+
+.PHONY : Token/NonTermToken.o
+
+# target to build an object file
+Token/NonTermToken.cpp.o:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/NonTermToken.cpp.o
+.PHONY : Token/NonTermToken.cpp.o
+
+Token/NonTermToken.i: Token/NonTermToken.cpp.i
+
+.PHONY : Token/NonTermToken.i
+
+# target to preprocess a source file
+Token/NonTermToken.cpp.i:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/NonTermToken.cpp.i
+.PHONY : Token/NonTermToken.cpp.i
+
+Token/NonTermToken.s: Token/NonTermToken.cpp.s
+
+.PHONY : Token/NonTermToken.s
+
+# target to generate assembly for a file
+Token/NonTermToken.cpp.s:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/NonTermToken.cpp.s
+.PHONY : Token/NonTermToken.cpp.s
+
+Token/SpecToken.o: Token/SpecToken.cpp.o
+
+.PHONY : Token/SpecToken.o
+
+# target to build an object file
+Token/SpecToken.cpp.o:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/SpecToken.cpp.o
+.PHONY : Token/SpecToken.cpp.o
+
+Token/SpecToken.i: Token/SpecToken.cpp.i
+
+.PHONY : Token/SpecToken.i
+
+# target to preprocess a source file
+Token/SpecToken.cpp.i:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/SpecToken.cpp.i
+.PHONY : Token/SpecToken.cpp.i
+
+Token/SpecToken.s: Token/SpecToken.cpp.s
+
+.PHONY : Token/SpecToken.s
+
+# target to generate assembly for a file
+Token/SpecToken.cpp.s:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/SpecToken.cpp.s
+.PHONY : Token/SpecToken.cpp.s
+
+Token/TermToken.o: Token/TermToken.cpp.o
+
+.PHONY : Token/TermToken.o
+
+# target to build an object file
+Token/TermToken.cpp.o:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/TermToken.cpp.o
+.PHONY : Token/TermToken.cpp.o
+
+Token/TermToken.i: Token/TermToken.cpp.i
+
+.PHONY : Token/TermToken.i
+
+# target to preprocess a source file
+Token/TermToken.cpp.i:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/TermToken.cpp.i
+.PHONY : Token/TermToken.cpp.i
+
+Token/TermToken.s: Token/TermToken.cpp.s
+
+.PHONY : Token/TermToken.s
+
+# target to generate assembly for a file
+Token/TermToken.cpp.s:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Token/TermToken.cpp.s
+.PHONY : Token/TermToken.cpp.s
 
 Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.o: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.cpp.o
 
@@ -129,7 +291,7 @@ Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.o: Users/a.mamaev/CLio
 
 # target to build an object file
 Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.cpp.o:
-	$(MAKE) -f CMakeFiles/Calculator.dir/build.make CMakeFiles/Calculator.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.cpp.o
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.cpp.o
 .PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.cpp.o
 
 Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.i: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.cpp.i
@@ -138,7 +300,7 @@ Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.i: Users/a.mamaev/CLio
 
 # target to preprocess a source file
 Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.cpp.i:
-	$(MAKE) -f CMakeFiles/Calculator.dir/build.make CMakeFiles/Calculator.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.cpp.i
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.cpp.i
 .PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.cpp.i
 
 Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.s: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.cpp.s
@@ -147,8 +309,143 @@ Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.s: Users/a.mamaev/CLio
 
 # target to generate assembly for a file
 Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.cpp.s:
-	$(MAKE) -f CMakeFiles/Calculator.dir/build.make CMakeFiles/Calculator.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.cpp.s
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.cpp.s
 .PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.cpp.s
+
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.o: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.cpp.o
+
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.o
+
+# target to build an object file
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.cpp.o:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.cpp.o
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.cpp.o
+
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.i: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.cpp.i
+
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.i
+
+# target to preprocess a source file
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.cpp.i:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.cpp.i
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.cpp.i
+
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.s: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.cpp.s
+
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.s
+
+# target to generate assembly for a file
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.cpp.s:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.cpp.s
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.cpp.s
+
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.o: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.cpp.o
+
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.o
+
+# target to build an object file
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.cpp.o:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.cpp.o
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.cpp.o
+
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.i: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.cpp.i
+
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.i
+
+# target to preprocess a source file
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.cpp.i:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.cpp.i
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.cpp.i
+
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.s: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.cpp.s
+
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.s
+
+# target to generate assembly for a file
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.cpp.s:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.cpp.s
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.cpp.s
+
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.o: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.cpp.o
+
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.o
+
+# target to build an object file
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.cpp.o:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.cpp.o
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.cpp.o
+
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.i: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.cpp.i
+
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.i
+
+# target to preprocess a source file
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.cpp.i:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.cpp.i
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.cpp.i
+
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.s: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.cpp.s
+
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.s
+
+# target to generate assembly for a file
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.cpp.s:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.cpp.s
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.cpp.s
+
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.o: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.cpp.o
+
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.o
+
+# target to build an object file
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.cpp.o:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.cpp.o
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.cpp.o
+
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.i: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.cpp.i
+
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.i
+
+# target to preprocess a source file
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.cpp.i:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.cpp.i
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.cpp.i
+
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.s: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.cpp.s
+
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.s
+
+# target to generate assembly for a file
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.cpp.s:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.cpp.s
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.cpp.s
+
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.o: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.cpp.o
+
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.o
+
+# target to build an object file
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.cpp.o:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.cpp.o
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.cpp.o
+
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.i: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.cpp.i
+
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.i
+
+# target to preprocess a source file
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.cpp.i:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.cpp.i
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.cpp.i
+
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.s: Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.cpp.s
+
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.s
+
+# target to generate assembly for a file
+Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.cpp.s:
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.cpp.s
+.PHONY : Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.cpp.s
 
 main.o: main.cpp.o
 
@@ -156,7 +453,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/Calculator.dir/build.make CMakeFiles/Calculator.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -165,7 +462,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/Calculator.dir/build.make CMakeFiles/Calculator.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -174,7 +471,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/Calculator.dir/build.make CMakeFiles/Calculator.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/CALCULATOR72.dir/build.make CMakeFiles/CALCULATOR72.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -185,10 +482,43 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Calculator"
+	@echo "... CALCULATOR72"
+	@echo "... Compiler/Compiler.o"
+	@echo "... Compiler/Compiler.i"
+	@echo "... Compiler/Compiler.s"
+	@echo "... Compiler/Parser.o"
+	@echo "... Compiler/Parser.i"
+	@echo "... Compiler/Parser.s"
+	@echo "... Compiler/Scanner.o"
+	@echo "... Compiler/Scanner.i"
+	@echo "... Compiler/Scanner.s"
+	@echo "... Token/NonTermToken.o"
+	@echo "... Token/NonTermToken.i"
+	@echo "... Token/NonTermToken.s"
+	@echo "... Token/SpecToken.o"
+	@echo "... Token/SpecToken.i"
+	@echo "... Token/SpecToken.s"
+	@echo "... Token/TermToken.o"
+	@echo "... Token/TermToken.i"
+	@echo "... Token/TermToken.s"
 	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.o"
 	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.i"
 	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Message/Message.s"
+	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.o"
+	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.i"
+	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/Node.s"
+	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.o"
+	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.i"
+	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/ResultNode.s"
+	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.o"
+	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.i"
+	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Node/TokenNode.s"
+	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.o"
+	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.i"
+	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Position/Position.s"
+	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.o"
+	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.i"
+	@echo "... Users/a.mamaev/CLionProjects/Lab7.2/Utils/Token/Token.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

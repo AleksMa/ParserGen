@@ -5,11 +5,11 @@
 #include <vector>
 #include <map>
 #include <stack>
-#include "../Token/Token.h"
+#include "../../Utils/Token/Token.h"
+#include "../../Utils/Node/Node.h"
+#include "../../Utils/Node/ResultNode.h"
+#include "../../Utils/NameMap.h"
 #include "Scanner.h"
-#include "../Node/Node.h"
-#include "../Node/ResultNode.h"
-#include "../Utils/NameMap.h"
 
 using namespace std;
 

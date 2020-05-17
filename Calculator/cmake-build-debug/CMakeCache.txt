@@ -14,6 +14,12 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+CALCULATOR72_BINARY_DIR:STATIC=/Users/a.mamaev/CLionProjects/Lab7.2/Calculator/cmake-build-debug
+
+//Value Computed by CMake
+CALCULATOR72_SOURCE_DIR:STATIC=/Users/a.mamaev/CLionProjects/Lab7.2/Calculator
+
 //Path to a program.
 CMAKE_AR:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ar
 
@@ -151,7 +157,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Calculator
+CMAKE_PROJECT_NAME:STATIC=CALCULATOR72
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ranlib
@@ -217,6 +223,12 @@ Calculator_BINARY_DIR:STATIC=/Users/a.mamaev/CLionProjects/Lab7.2/Calculator/cma
 
 //Value Computed by CMake
 Calculator_SOURCE_DIR:STATIC=/Users/a.mamaev/CLionProjects/Lab7.2/Calculator
+
+//Value Computed by CMake
+LEXERLAB72_BINARY_DIR:STATIC=/Users/a.mamaev/CLionProjects/Lab7.2/Calculator/cmake-build-debug
+
+//Value Computed by CMake
+LEXERLAB72_SOURCE_DIR:STATIC=/Users/a.mamaev/CLionProjects/Lab7.2/Calculator
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl

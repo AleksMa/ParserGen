@@ -1,7 +1,7 @@
 #ifndef LAB71_SPECTOKEN_H
 #define LAB71_SPECTOKEN_H
 
-#include "Token.h"
+#include "../../Utils/Token/Token.h"
 
 class SpecToken: public Token {
 public:

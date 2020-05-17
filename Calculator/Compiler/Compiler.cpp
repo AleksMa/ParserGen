@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Compiler.h"
 #include "Scanner.h"
-#include "../Node/TokenNode.h"
+#include "../../Utils/Node/TokenNode.h"
 
 using namespace std;
 
@@ -84,6 +84,7 @@ void Compiler::nodeAST(ResultNode *root, ResultNode *old_node) {
 
 void Compiler::print_tree(ResultNode *root) {
     print_node(root->children[0], 0);
+    cout << endl << endl;
 }
 
 void Compiler::print_node(ResultNode *node, int level) {
@@ -292,6 +293,7 @@ void Compiler::create_grammar(ResultNode *root) {
     auto rnames = calc_rule_names;
     auto tnames = calc_token_names;
 
+    cout << "map<pair<rule, domain_tag>, vector<pair<bool, int>>> D =" << endl;
     cout << "{";
     for (auto mit = new_D.begin(); mit != new_D.end(); mit++) {
         auto pbi = (*mit).first;
@@ -307,7 +309,7 @@ void Compiler::create_grammar(ResultNode *root) {
 
         cout << "}}," << endl;
     }
-    cout << "}" << endl;
+    cout << "};" << endl;
 
 
 

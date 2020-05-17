@@ -2,7 +2,7 @@
 #define LAB71_NONTERMTOKEN_H
 
 #include <string>
-#include "Token.h"
+#include "../../Utils/Token/Token.h"
 
 using namespace std;
 

@@ -1,4 +1,3 @@
-
 #ifndef LAB71_RULESMAP_H
 #define LAB71_RULESMAP_H
 
