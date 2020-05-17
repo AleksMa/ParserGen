@@ -1,0 +1,3 @@
+[submodule "TableGen"]
+	path = TableGen
+	url = https://github.com/AleksMa/TableGen
